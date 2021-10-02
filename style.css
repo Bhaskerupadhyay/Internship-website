@@ -10,13 +10,12 @@
     background: #2997b3;
 }
 nav img {
-    width: 15rem;
-    height: 3.5rem;
+    width: 10rem;
+    height: 2.5rem;
     padding: 0%;
 }
 .nav-item:hover{
     background: rgb(231, 230, 171);
-    color: aqua;
 }
 
   .main-about {
@@ -45,10 +44,7 @@ nav img {
   padding: 3%;
   margin-bottom: 5rem;
 }
-.sir-vision{
-  padding: 5%;
 
-}
 .sir-vision img {
   height :10rem;
   width :13rem;
@@ -67,14 +63,13 @@ nav img {
      width: 80%;
      height: 10rem;
      float: right;
+     padding-top: 5%;
  }
-.mam-vision{
-  padding: 5%;
-}
+
 .mam-vision img {
   padding: 0;
   width: 20%;
-  height: 13rem;
+  height: 10rem;
   float: right;
 }
  .mam-vision {
@@ -87,19 +82,112 @@ nav img {
       width: 80%;
       height: 10rem;
       float: left;
+      padding-top: 5%;
   }
 
+/* imporant courses */
+.Important-course{
+  height:100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #79B4B7;
+  flex-wrap: wrap;
 
+}
+
+.block{
+  height: 40rem;
+  width:  30rem;
+  background-color: #D4ECDD;
+  margin :auto;
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+
+
+.imp-img-box img {
+  margin-top:10%;
+  height: 10rem;
+  width: 10rem;
+  position: relative;
+}
+
+.
 
 /* courses */
 #carouselExampleFade{
-    background: #11324D;
+    background-color: #11324D;
     padding: 8%;
 }
 #carouselExampleFade img {
-    width: 50px;
+    width: 40px;
     height: 200px;
     padding: 10%;
+}
+
+/* Reviews */
+/* .carousel-item{
+
+  text-align: center;
+
+} */
+#Review {
+  margin-top: 2%;
+  background-color: #79B4B7
+  
+  /* padding: 1%; */
+}
+.student-img {
+  height :10rem;
+  width :20%;
+  margin-right:0;
+  float: left;
+
+}
+
+
+.student-img img{
+  height :10rem;
+  width :10rem;
+
+  position: relative;
+  left : 7rem;
+}
+
+.student-review {
+  height: 10rem;
+  width: 80%;
+  float: right;
+  text-align: center;
+  padding: 2%;
+  position: relative;
+  right : 4rem;
+
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  padding: 3% 15%;
+  height: 7rem;
+}
+.fab {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 0.4rem;
+
+}
+.fab.fa-instagram-square {
+  color: #bd36cf;
+}
+.fab.fa-instagram-square :hover{
+  color: red;
+}
+.fab.fa-youtube-square {
+  color: red;
 }
 
 @media( max-width : 600px)
@@ -108,44 +196,84 @@ nav img {
     height : 45rem;
   }
 
-  }
 }
 
+/* ********   Contact us   *********** */
+.contact-form{
+  /* background-color: rgb(255, 255, 255); */
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 70%;
+}
+div.container.contact-form {
+  background-color: #fff;
+}
 
-
-/* Reviews */
-/* .carousel-item{
-
+.contact-form .form-control{
+  border-radius:1rem;
+}
+.contact-image{
   text-align: center;
-
-} */
-.student-img {
-  height :10rem;
-  width :20%;
-  background-color: red;
-  margin-right:0;
-
 }
-
-
-.student-img img{
-  height :10rem;
-  /* width :10rem; */
-  float: left;
-  position: relative;
-  left : 7rem;
+.contact-image img{
+  border-radius: 6rem;
+  width: 11%;
+  margin-top: -3%;
+  transform: rotate(29deg);
 }
-
-.student-review p{
-  height: 10rem;
-  width: 80%;
+.contact-form form{
+  padding: 11%;
+}
+.contact-form form .row{
+  margin-bottom: -7%;
+}
+.contact-form h3{
+  margin-bottom: 8%;
+  margin-top: -10%;
+  text-align: center;
+  color: #0062cc;
+}
+.contact-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: #dc3545;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.btnContactSubmit
+{
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: #0062cc;
+  border: none;
+  cursor: pointer;
+}
+.location {
+  padding: 1%;
+}
+.location iframe {
+  width: 100%;
+}
+.row.contact-info {
+  margin-top: 1rem;
+}
+.col-md-6.add-icon {
+  width: 20%;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+.col-md-6.add-icon i {
   float: right;
-  text-align: center;
-  /* background-color: green; */
-  padding: 2%;
-  position: relative;
-  right : 4rem;
-
+}
+.col-md-6.add-info {
+  width: 80%;
+  padding: 0;
 }
 
 /* Gallery */
@@ -175,11 +303,7 @@ nav img {
   /* background-color: red; */
   position: relative;
   margin: 3rem;
-
   overflow: hidden;
-
-
-
 }
 .gallery-container .box .img-box{
   overflow: hidden;
@@ -188,10 +312,7 @@ nav img {
   position: relative;
   max-width: 100%;
   transition: transform 1s;
-  height: 400px
-
-
-
+  height: 400px;
 }
 
 .gallery-container .box:hover .img-box img{
@@ -211,17 +332,57 @@ nav img {
   text-align: center;
   transform: scaleY(0);
   transform: transition 0.5s;
-
-
-
-
-
 }
 .gallery-container .box:hover .content{
   transform: scaleY(1);
-
 }
 .gallery-container .box .content p{
   margin-top: 30%;
   color: white;
+}
+
+/* java Html */
+.course-navbar{
+  background-color: #316B83;
+  max-width: 100%;
+  max-height: 100%;
+  padding-left: 2.4rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+
+}
+
+.Course-Description{
+  padding: 2.4rem;
+
+}
+.course-details{
+  max-width: 100%;
+  max-height: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  padding: 2.4rem;
+
+}
+
+.course-details-content{
+  height: 20rem;
+  width:30rem;
+  background-color: yellow;
+  text-align: left;
+}
+
+.course-details-content.color1{
+  background-color: #6D8299;
+}
+.course-details-content.color2{
+  background-color: #8CA1A5;
+}
+.course-details-content h3 {
+  margin-top: 2rem;
+  margin-left: 2.5rem;
+}
+.course-details-content ul {
+  margin-left: 2.5rem;
 }
